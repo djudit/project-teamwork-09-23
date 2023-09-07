@@ -1,0 +1,49 @@
+body {
+  font-family: var(--main-font);
+  letter-spacing: -0.02em;
+  color: var(--light-color);
+  background-color: var(--primary-dark-color);
+}
+
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 100px;
+  }
+}
+
+/* Titles */
+
+h2 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.04em;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 48px;
+    line-height: 1.13;
+  }
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.14;
+}
