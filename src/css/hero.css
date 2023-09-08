@@ -1,3 +1,112 @@
 .hero {
   color: red;
 }
+.hero-container {
+  max-width: 335px;
+  background-color: var(--secondary-dark-color);
+  border-radius: 30px;
+}
+@media screen and (min-width: 768px) {
+  .hero-container {
+    max-width: 704px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero-container {
+    max-width: 1080px;
+  }
+}
+.hero-name {
+  color: var(--light-color);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  padding: 40px 20px 20px 20px;
+}
+.hero-name-photography {
+  color: var(--accent-color);
+  font-style: italic;
+  font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  .hero-name {
+    font-size: 60px;
+    line-height: 1.07;
+    max-width: 517px;
+    padding-top: 64px;
+    padding-left: 32px;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero-name {
+    font-size: 64px;
+    line-height: 1.06;
+    max-width: 563px;
+    padding-top: 60px;
+    padding-left: 50px;
+  }
+}
+.hero-name-text {
+  color: var(--light-color);
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .hero-name-text {
+    padding-left: 32px;
+    width: 450px;
+    padding-right: 0px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero-name-text {
+    width: 468px;
+    padding-left: 50px;
+    padding-bottom: 136px;
+  }
+}
+.hero-students {
+  padding-left: 20px;
+  padding-bottom: 4px;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .hero-students {
+    padding-left: 32px;
+  }
+}
+
+.hero-students-foto {
+  position: absolute;
+  display: flex;
+  width: 107px;
+  height: 44px;
+}
+@media screen and (min-width: 768px) {
+  .hero-students-foto {
+    width: 135px;
+    height: 54px;
+  }
+}
+.hero-students-foto:nth-child(1) {
+  z-index: 3;
+}
+.hero-students-foto:nth-child(2) {
+  z-index: 2;
+  left: 55px;
+}
+@media screen and (min-width: 768px) {
+  .hero-students-foto:nth-child(2) {
+    left: 67px;
+  }
+}
+.hero-students-foto:nth-child(3) {
+  z-index: 1;
+  left: 88px;
+}
