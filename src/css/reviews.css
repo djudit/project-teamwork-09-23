@@ -1,3 +1,15 @@
 .reviews {
-  color: #FFF;
+  padding-bottom: 150px;
 }
+
+.reviews-title {
+  color: var(#fff)
+  font-family:  DM Sans, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.1; 
+  letter-spacing: -0.04em;
+}
+
+
