@@ -1,11 +1,24 @@
 .advertisement {
   overflow: hidden;
   font-family: var(--main-font);
-
-  font-weight: 600;
-  font-size: 34px;
+  font-size: 28px;
+  line-height: 1.14;
   text-transform: uppercase;
-  background-color: #ffdc00;
+  color: var(--accent-color);
+}
+
+@media (min-width: 768px) {
+  .advertisement {
+    font-size: 40px;
+    line-height: 1.25;
+  }
+}
+
+@media (min-width: 1280px) {
+  .advertisement {
+    font-size: 59px;
+    line-height: 1.08;
+  }
 }
 
 .advertisement-ticker {
@@ -15,7 +28,7 @@
 .advertisement-txt {
   flex-shrink: 0;
   margin: 0;
-  padding: 10px 15px;
+  padding: 20px 20px;
   min-width: 100%;
   white-space: nowrap;
   animation-name: advertisementTicker;
@@ -32,4 +45,14 @@
   to {
     transform: translateX(-100%);
   }
+}
+
+@media (min-width: 768px) {
+  .advertisement-txt {
+    padding: 24px 20px;
+  }
+}
+
+.advertisement span {
+  color: var(--light-color);
 }
