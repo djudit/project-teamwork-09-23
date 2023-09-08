@@ -1,3 +1,58 @@
 .advertisement {
-  color: red;
+  overflow: hidden;
+  font-family: var(--main-font);
+  font-size: 28px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+@media (min-width: 768px) {
+  .advertisement {
+    font-size: 40px;
+    line-height: 1.25;
+  }
+}
+
+@media (min-width: 1280px) {
+  .advertisement {
+    font-size: 59px;
+    line-height: 1.08;
+  }
+}
+
+.advertisement-ticker {
+  display: flex;
+}
+
+.advertisement-txt {
+  flex-shrink: 0;
+  margin: 0;
+  padding: 20px 20px;
+  min-width: 100%;
+  white-space: nowrap;
+  animation-name: advertisementTicker;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes advertisementTicker {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@media (min-width: 768px) {
+  .advertisement-txt {
+    padding: 24px 20px;
+  }
+}
+
+.advertisement span {
+  color: var(--light-color);
 }
