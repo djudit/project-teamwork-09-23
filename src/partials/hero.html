@@ -1,74 +1,108 @@
 <section class="hero container">
   <div class="hero-container">
-    <h1 class="hero-name">
-      Discover the magic of
-      <span class="hero-name-photography">photography</span> in<br />
-      our school
-    </h1>
-    <p class="hero-name-text">
-      Our photography school offers an unforgettable journey, where you can
-      learn the basics of composition, master technical skills, translate your
-      unique ideas.
-    </p>
-    <div>
-      <div>
-        <ul class="hero-students">
-          <li class="hero-students-foto">
-            <img
-              srcset="./img/hero-student1.png 1x, ./img/hero-student1@2x.png 2x"
-              src="./img/hero-student1.png"
-              alt="student1"
-              loading="lazy"
-            />
-          </li>
-          <li class="hero-students-foto">
-            <img
-              srcset="./img/hero-student2.png 1x, ./img/hero-student2@2x.png 2x"
-              src="./img/hero-student2.png"
-              alt="student2"
-              loading="lazy"
-            />
-          </li>
-          <li class="hero-students-foto">
-            <img
-              srcset="./img/hero-student3.png 1x, ./img/hero-student3@2x.png 2x"
-              src="../img/hero-student3.png"
-              alt="student3"
-              loading="lazy"
-            />
-          </li>
-        </ul>
-        <p>Our happy students</p>
-        <svg class="" width="18" height="8.66">
-          <use href="../img/icons.svg#icon-Arrow-2Stroke"></use>
-        </svg>
-      </div>
-      <div>
-        <div>
-          <svg class="" width="20" height="20">
-            <use href="../img/icons.svg#icon-star"></use>
-          </svg>
+    <div class="hero-container-for-position">
+      <h1 class="hero-name">
+        Discover the magic of
+        <span class="hero-name-photography">photography</span> in<br />
+        our school
+      </h1>
+      <p class="hero-name-text">
+        Our photography school offers an unforgettable journey, where you can
+        learn the basics of composition, master technical skills, translate your
+        unique ideas.
+      </p>
+      <div class="hero-elements">
+        <div class="hero-students">
+          <ul>
+            <li class="hero-students-foto">
+              <img
+                srcset="
+                  ./img/hero-student1.png    1x,
+                  ./img/hero-student1@2x.png 2x
+                "
+                src="./img/hero-student1.png"
+                alt="student1"
+                loading="lazy"
+              />
+            </li>
+            <li class="hero-students-foto">
+              <img
+                srcset="
+                  ./img/hero-student2.png    1x,
+                  ./img/hero-student2@2x.png 2x
+                "
+                src="./img/hero-student2.png"
+                alt="student2"
+                loading="lazy"
+              />
+            </li>
+            <li class="hero-students-foto">
+              <img
+                srcset="
+                  ./img/hero-student3.png    1x,
+                  ./img/hero-student3@2x.png 2x
+                "
+                src="../img/hero-student3.png"
+                alt="student3"
+                loading="lazy"
+              />
+            </li>
+          </ul>
+          <div class="hero-container-text">
+            <p class="hero-students-text">Our happy students</p>
+            <svg class="hero-arrow" width="18" height="8.66">
+              <use href="../img/icons.svg#icon-Arrow-2Stroke"></use>
+            </svg>
+          </div>
         </div>
-        <p>Reviews</p>
-        <p>+1500</p>
+        <div class="hero-reviews">
+          <div class="hero-star-container">
+            <svg class="hero-star" width="20" height="20">
+              <use href="../img/icons.svg#icon-star"></use>
+            </svg>
+          </div>
+          <div class="hero-reviews-text">
+            <p class="hero-reviews-word">Reviews</p>
+            <p class="hero-reviews-number">+1500</p>
+          </div>
+        </div>
       </div>
     </div>
-    <picture>
-      <source
-        media="(max-width: 768px)"
-        srcset="
-          ./img/src/img/hero-photographer-mob.png 1x,
-          src/img/hero-photographer-mob@2x.png    2x
-        "
-        type="img/png"
-      />
-      <img
-        src="./img/hero-photographer-mob.png"
-        alt="photographer"
-        loading="lazy"
-        width="259"
-        height="314"
-      />
-    </picture>
+    <div>
+      <picture>
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./img/hero-photographer-desk.png    1x,
+            ./img/hero-photographer-desk@2x.png 2x
+          "
+          type="image/png"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./img/hero-photographer-tab.png    1x,
+            ./img/hero-photographer-tab@2x.png 2x
+          "
+          type="image/png"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./img/hero-photographer-mob.png    1x,
+            ./img/hero-photographer-mob@2x.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          class="hero-photographer"
+          src="./img/hero-photographer-mob.png"
+          alt="photographer"
+          loading="lazy"
+          width="259"
+          height="314"
+        />
+      </picture>
+    </div>
   </div>
 </section>
