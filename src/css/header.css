@@ -19,3 +19,165 @@
 .nav-link:focus {
   color: #747bff;
 }
+/* HEADER */
+header {
+  display: flex;
+  align-items: center;
+  background-color: var(--third-dark-color);
+  color: var(--light-color);
+  padding: 20px 0;
+}
+
+.header-box .container {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.20);
+}
+
+@media (min-width: 768px) {
+ .header-box .container{
+  border: none;
+ }
+}
+
+@media (min-width: 1280px) {
+ .header-box .container{
+  justify-content: space-between;
+ }
+}
+
+
+
+
+.header-logo-svg {
+  margin-right: 94px;
+ }
+
+@media (min-width: 768px) {
+ .header-logo-svg {
+  margin-right: 301px;
+ }
+}
+
+@media (min-width: 1280px) {
+.header-logo-svg {
+  margin-right: 97px;
+ }
+
+}
+
+
+
+.logo-svg {
+  fill: var(--light-color);
+}
+
+
+
+
+.nav {
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.20);
+  background: var(--primary-dark-color);
+  padding: 0 20px;
+  justify-content: center;
+  width: 335px;
+  height: 50px;
+  
+}
+.nav-list {
+  display: none;
+}
+@media (min-width: 768px) {
+  .nav {
+    width: 504px;
+    height: 60px;
+
+  }
+}
+@media (min-width: 1280px) {
+.nav {
+  padding: 0 50px;
+  width: 822px;
+  height: 60px;
+ }
+ .nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  }
+  .nav-list li {
+  /* flex-basis: calc((100% - 112px) / 5); */
+  flex-shrink: 0;
+}
+.nav-link {
+  color: #FFF;
+  font-family: var(--main-font);
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
+}
+
+.menu-toggle {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-dark-color);
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+ }
+
+ .menu-svg {
+  fill: var(--light-color);
+}
+
+ @media (min-width: 768px) {
+ .menu-toggle {
+  width: 40px;
+  height: 28px;
+ }
+ }
+
+ @media (min-width: 1280px) {
+  .menu-toggle {
+    display: none;
+  }
+ }
+
+.header-button {
+/* background: url(../img/icons.svg#icon-bi_camera-fill); */
+}
+
+@media (min-width:768px) {
+  .header-button {
+
+  }
+}
+
+@media (min-width: 1280px) {
+ .header-button {
+  padding: 16px 84px;
+  border-radius: 12px;
+  border: none;
+  background: var(--light-color);
+  color: #121212;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5; 
+  text-transform: uppercase;
+  margin-left: 20px;
+  cursor: pointer;
+   
+}
+}
