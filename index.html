@@ -26,8 +26,8 @@
     />
 
     
-    <script type="module" crossorigin src="/project-teamwork-09-23/assets/index-c276dc87.js"></script>
-    <link rel="stylesheet" href="/project-teamwork-09-23/assets/index-e35d3009.css">
+    <script type="module" crossorigin src="/project-teamwork-09-23/assets/index-0b0b5434.js"></script>
+    <link rel="stylesheet" href="/project-teamwork-09-23/assets/index-bcfaec2b.css">
   </head>
   <body>
     <header>
@@ -378,67 +378,83 @@
 
       <section class="sign">
   <div class="container">
-    <h2>Sign Up</h2>
-    <p>Please use the form below to contact us. Enter your name, email, and message and we'll get back to you shortly.
-    </p>
-    <form class="sign-up-form" name="sign_up_form">
-      <div class="sign-up-field">
-        <input 
-        id="user-name"
-        class="form-input"
-        type="text"
-        name="user-name"
-        placeholder="Enter your name"/>
-      </div>
+    <div class="sign-up-container">
+      <h2 class="title">Sign <span class="title-second">Up</span></h2>
+      <p class="supporting-text">
+        Please use the form below to contact us. Enter your name, email, and
+        message and we'll get back to you shortly.
+      </p>
+      <form class="sign-up-form" name="sign_up_form">
+        <div class="sign-up-field">
+          <label for="user-name">
+            <input
+              class="form-input"
+              id="user-name"
+              type="text"
+              name="user-name"
+              placeholder="Enter your name"
+            />
+          </label>
+        </div>
 
-      <div class="sign-up-field">
-        <input 
-        id="user-email"
-        class="form-input"
-        type="email"
-        name="email"
-        placeholder="Enter your email"/>
-      </div>
+        <div class="sign-up-field">
+          <label for="user-email">
+            <input
+              class="form-input"
+              id="user-email"
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+            />
+          </label>
+        </div>
 
-      <div class="sign-up-field">
-        <textarea
-        id="user-comment"
-        class="form-input-comment"
-        name="user-comment"
-        rows="5"
-        placeholder="Message"
-        ></textarea>
-      </div>
+        <div class="sign-up-field">
+          <label for="user-comment">
+            <textarea
+              class="form-input-comment"
+              id="user-comment"
+              name="user-comment"
+              rows="5"
+              placeholder="Message"
+            ></textarea>
+          </label>
+        </div>
 
-      <button class="modal-button-send" type="submit">Send</button>
-      <label class="modal-form-agreement" for="user-privacy">
-        By clicking on “Send” button, you agree to our 
-        <a class="policy-link" href="/">Privacy Policy</a>
-        and allow Promodo to use this information for marketing purposes.
-      </label>
-
-    </form>
-
-    <div class="img-objective">
-      <img 
-      srcset="/project-teamwork-09-23/assets/sign-up-objective-desk-7cc17b18.png 1x, /project-teamwork-09-23/assets/sign-up-objective-desk@2x-55e2b2b6.png 2x"
-      src="/project-teamwork-09-23/assets/sign-up-objective-desk-7cc17b18.png" 
-      alt="Objective"
-      width="150"
-      height="142"
-      loading="lazy">
+        <button class="button-send" type="submit">Send</button>
+        <p class="form-agreement">
+          By clicking on &#8220;Send&#8221; button, you agree to our
+          <a class="policy-link" href="/">Privacy Policy</a>
+          and allow Promodo to use this information for marketing purposes.
+        </p>
+      </form>
     </div>
 
-    <div class="img-camera">
-      <img 
-      srcset="/project-teamwork-09-23/assets/sign-up-camera-desk-9e0de1d5.png 1x, /project-teamwork-09-23/assets/sign-up-camera-desk@2x-bc47bdaf.png 2x"
-      src="/project-teamwork-09-23/assets/sign-up-camera-desk-9e0de1d5.png" 
-      alt="Camera"
-      width="240"
-      height="296"
-      loading="lazy">
-    </div>
+    <div class="equipment">
+      <div class="img-objective">
+        <img
+          class="obj-img"
+          srcset="/project-teamwork-09-23/assets/sign-up-objective-desk-7cc17b18.png 1x, /project-teamwork-09-23/assets/sign-up-objective-desk@2x-55e2b2b6.png 2x"
+          src="/project-teamwork-09-23/assets/sign-up-objective-desk-7cc17b18.png"
+          alt="Objective"
+          width="150"
+          height="142"
+          loading="lazy"
+        />
+      </div>
 
+      <div class="img-camera">
+        <img
+          class="cmr-img"
+          srcset="/project-teamwork-09-23/assets/sign-up-camera-desk-9e0de1d5.png 1x, /project-teamwork-09-23/assets/sign-up-camera-desk@2x-bc47bdaf.png 2x"
+          src="/project-teamwork-09-23/assets/sign-up-camera-desk-9e0de1d5.png"
+          alt="Camera"
+          width="240"
+          height="296"
+          loading="lazy"
+        />
+      </div>
+    </div>
   </div>
 </section>
 
