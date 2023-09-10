@@ -39,7 +39,6 @@
 .hero-name-photography {
   color: var(--accent-color);
   font-style: italic;
-  font-weight: 400;
 }
 @media screen and (min-width: 768px) {
   .hero-name {
@@ -67,7 +66,7 @@
 }
 @media screen and (min-width: 768px) {
   .hero-name-text {
-    width: 450px;
+    width: 418px;
     padding-right: 0px;
   }
 }
@@ -170,7 +169,10 @@
 .hero-arrow {
   fill: var(--light-color);
 }
-
+.hero-arrow:hover,
+.hero-arrow:focus {
+  fill: var(--accent-color);
+}
 .hero-reviews {
   display: flex;
   gap: 12px;
