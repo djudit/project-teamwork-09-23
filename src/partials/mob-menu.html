@@ -1,9 +1,30 @@
-<div class="menu-container">
-  <ul>
-    <li>About us</li>
-    <li>Our courses</li>
-    <li>Our mentors</li>
-    <li>Reviews</li>
-    <li>Contacts</li>
-  </ul>
+<button
+  class="menu-toggle js-open-menu"
+  aria-expanded="false"
+  aria-controls="mobile-menu"
+>
+  button
+</button>
+
+<div class="mob-shadow js-menu-container">
+  <div class="menu-container mob-menu-background" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg width="32" height="32" class="modal-close">
+        <use class="mob-menu-close" href="./img/icons.svg#icon-x"></use>
+      </svg>
+    </button>
+    <ul class="mob-menu-style">
+      <li><a class="mob-menu-item" href="#about">About us</a></li>
+      <li><a class="mob-menu-item" href="#courses">Our courses</a></li>
+      <li><a class="mob-menu-item" href="#mentors">Our mentors</a></li>
+      <li><a class="mob-menu-item" href="#reviews">Reviews</a></li>
+      <li><a class="mob-menu-item" href="#contacts">Contacts</a></li>
+    </ul>
+  </div>
 </div>
+<script
+  defer
+  src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+  crossorigin="anonymous"
+></script>
