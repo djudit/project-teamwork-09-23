@@ -1,11 +1,9 @@
-.sign .container {
-  display: flex;
-}
 
 @media screen and (min-width: 767.98px) {
   .sign-up-container {
     max-width: 480px;
   }
+
 }
 
 @media screen and (max-width: 1279.98px) {
@@ -15,6 +13,12 @@
     display: none;
   }
 
+}
+
+@media screen and (min-width: 1280px) {
+  .sign-up-container {
+
+  }
 }
 
 .sign-up-form {
@@ -37,6 +41,8 @@
   line-height: 1.28;
   letter-spacing: -0.02em;
   margin-bottom: 42px;
+
+  max-width: 295px;
 }
 
 @media screen and (min-width: 767.98px) {
