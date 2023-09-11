@@ -34,6 +34,7 @@ header {
   border: 1px solid rgba(255, 255, 255, 0.20);
   border-radius: 12px;
   
+  
 }
 
 @media (min-width: 768px) {
@@ -41,8 +42,6 @@ header {
   border: none;
  }
 }
-
-
 
 
 .header-logo-svg {
@@ -63,12 +62,9 @@ header {
 }
 
 
-
 .logo-svg {
   fill: var(--light-color);
 }
-
-
 
 
 .nav {
@@ -128,7 +124,6 @@ header {
     background-color: var(--third-dark-color);
     cursor: pointer;
     border: none;
-    border-radius: 50%;
     outline: none;
  }
 
@@ -151,12 +146,15 @@ header {
 
 .btn-mob {
  background-color: var(--secondary-dark-color);
-border: none;
-border-radius: 50%;
-padding: 9px;
-
-
+ border: none;
+ border-radius: 50%;
+ width: 32px;
+ height: 32px;
+ align-items: center;
+ justify-content: center;
 }
+
+
 .icon-svg {
   fill: var(--accent-color) ;
 }
@@ -168,7 +166,6 @@ padding: 9px;
 }
 }
 
- 
 @media (min-width:768px) {
   .header-button {
   padding: 16px 58px;
