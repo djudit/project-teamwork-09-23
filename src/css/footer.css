@@ -9,7 +9,7 @@
 
 footer {
   padding: 40px 0 20px 0;
-  background-image: url(./img/footer-mobile-line.png);
+  background-image: url(../img/footer-mobile-line.png);
   background-position: center;
   height: 535px;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -19,13 +19,13 @@ footer {
   footer {
     padding: 50px 0 25px 0;
     height: 331px;
-    background-image: url(./img/footer-tablet-line.png);
+    background-image: url(../img/footer-tablet-line.png);
   }
 }
 
 @media screen and (min-width: 1280px) {
   footer {
-    background-image: url(./img/footer-desktop-line.png);
+    background-image: url(../img/footer-desktop-line.png);
   }
 }
 
@@ -188,7 +188,7 @@ footer {
 
 .subscribe-input::placeholder {
   color: var(--primary-dark-color);
-  font-family: DM Sans;
+  font-family: var(--main-font);
   font-size: 16px;
   line-height: 1.25;
 }
