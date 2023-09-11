@@ -39,5 +39,11 @@
 <symbol id="icon-star" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4" d="M16 2.667l4.12 8.347 9.213 1.347-6.667 6.493 1.573 9.173-8.24-4.333-8.24 4.333 1.573-9.173-6.667-6.493 9.213-1.347 4.12-8.347z"></path>
 </symbol>
+<symbol id="icon-line-color" viewBox="0 0 23040 32">
+<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="16" d="M0 16h23040"></path>
+</symbol>
+<symbol id="icon-line" viewBox="0 0 23040 32">
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="16" d="M0 16h23040"></path>
+</symbol>
 </defs>
 </svg>
