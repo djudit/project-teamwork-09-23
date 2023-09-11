@@ -32,6 +32,7 @@
   display: flex;
   background: url(../img/icon-line.svg) no-repeat,
     url(../img/icon-line.svg) no-repeat bottom;
+  background-size: 100% auto;
 }
 
 .advertisement-txt {
