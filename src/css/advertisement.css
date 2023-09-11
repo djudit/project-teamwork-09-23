@@ -30,9 +30,11 @@
 
 .advertisement-ticker {
   display: flex;
-  background: url(../img/icon-line.svg) no-repeat,
+  /* background: url(../img/icon-line.svg) no-repeat,
     url(../img/icon-line.svg) no-repeat bottom;
-  background-size: 100% auto;
+  background-size: 100% auto; */
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .advertisement-txt {
