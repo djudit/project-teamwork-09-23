@@ -9,10 +9,12 @@
           </svg>
         </a>
 
-        <address class="footer-address">
+        <address class="footer-address" id="contacts">
           <ul class="footer-address-list">
             <li>
-              <a href="tel:+380665438912">UK: +38 066 543 8912</a>
+              <a href="tel:+380665438912" class="footer-link"
+                >UK: +38 066 543 8912</a
+              >
             </li>
             <li>Ukraine, Kyiv</li>
           </ul>
@@ -23,27 +25,38 @@
         <!-- footer-social -->
         <ul class="footer-social">
           <li>
-            <a href="https://www.instagram.com/goitclub/" target="_blank"
+            <a
+              href="https://www.instagram.com/goitclub/"
+              class="footer-link"
+              target="_blank"
               >Instagram</a
             >
           </li>
           <li>
-            <a href="https://www.facebook.com/goITclub/" target="_blank"
+            <a
+              href="https://www.facebook.com/goITclub/"
+              class="footer-link"
+              target="_blank"
               >Facebook</a
             >
           </li>
           <li>
-            <a href="https://www.youtube.com/c/GoIT" target="_blank">Youtube</a>
+            <a
+              href="https://www.youtube.com/c/GoIT"
+              class="footer-link"
+              target="_blank"
+              >Youtube</a
+            >
           </li>
         </ul>
         <!-- footer-nav -->
         <nav>
           <ul class="footer-nav-list">
-            <li><a href="#about">About us</a></li>
-            <li><a href="#courses">Our courses</a></li>
-            <li><a href="#mentors">Our mentors</a></li>
-            <li><a href="#reviews">Reviews</a></li>
-            <li><a href="#contacts">Contacts</a></li>
+            <li><a href="#about" class="footer-link">About us</a></li>
+            <li><a href="#courses" class="footer-link">Our courses</a></li>
+            <li><a href="#mentors" class="footer-link">Our mentors</a></li>
+            <li><a href="#reviews" class="footer-link">Reviews</a></li>
+            <li><a href="#contacts" class="footer-link">Contacts</a></li>
           </ul>
         </nav>
       </div>
@@ -52,6 +65,7 @@
         <label class="footer-form-label">
           <input
             type="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
             name="e-mail"
             class="subscribe-input"
             placeholder="Enter your email"
@@ -62,10 +76,14 @@
     </div>
     <!-- footer-privacy -->
     <div class="footer-privacy">
-      <p class="footer-privacy-text privacy">
-        Privacy Policy <br />
-        Public Offering Agreement
-      </p>
+      <div>
+        <a href="" class="footer-link"
+          ><p class="footer-privacy-text privacy">Privacy Policy</p></a
+        >
+        <a href="" class="footer-link">
+          <p class="footer-privacy-text privacy">Public Offering Agreement</p>
+        </a>
+      </div>
       <p class="footer-privacy-text rigths">
         2023 Focus Frame <br />
         © All rights reserved
