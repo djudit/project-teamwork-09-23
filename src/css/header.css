@@ -149,17 +149,26 @@ header {
   }
  }
 
-.header-button {
-
-border-radius: 50%;
+.btn-mob {
+ background-color: var(--secondary-dark-color);
 border: none;
+border-radius: 50%;
+padding: 9px;
 
 
-
-
-  
+}
+.icon-svg {
+  fill: var(--accent-color) ;
 }
 
+
+ @media (max-width:767px) {
+.header-button {
+  display: none;
+}
+}
+
+ 
 @media (min-width:768px) {
   .header-button {
   padding: 16px 58px;
@@ -175,6 +184,9 @@ border: none;
   text-transform: uppercase;
   cursor: pointer;
   }
+  .btn-mob {
+  display: none;
+}
 }
 
 @media (min-width: 1280px) {
