@@ -53,8 +53,6 @@ header {
   margin-right: 20px;
   justify-content: center;
   height: 50px;
-  
-  
 }
 .nav-list {
   display: none;
@@ -131,15 +129,15 @@ header {
  background-color: var(--secondary-dark-color);
  border: none;
  border-radius: 50%;
- width: 32px;
- height: 32px;
- align-items: center;
- justify-content: center;
+ width: 35px;
+ height: 35px;
+ padding: 9px;
+ margin: 15px;
 }
 
 
 .icon-svg {
-  fill: var(--accent-color) ;
+  fill: var(--accent-color);
 }
 
 
