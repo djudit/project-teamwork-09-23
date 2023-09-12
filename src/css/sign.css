@@ -146,6 +146,7 @@ input::placeholder {
 
   gap: 20px;
   margin-left: 60px;
+  position: relative;
 }
 
 .img-objective {
