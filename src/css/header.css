@@ -1,10 +1,12 @@
+
 /* HEADER */
 header {
   display: flex;
   align-items: center;
-  background-color: var(--third-dark-color);
+  background-color: var(--primary-dark-color);
   color: var(--light-color);
   padding: 20px 0;
+  padding-bottom: 80px;
 }
 
 .header-box  {
@@ -53,7 +55,7 @@ header {
   display: flex;
   align-items: center;
   border-radius: 12px;
-  background: var(--third-dark-color);
+  background: var(--primary-dark-color);
   margin-right: 20px;
   justify-content: center;
   height: 50px;
@@ -67,6 +69,7 @@ header {
     width: 504px;
     height: 60px;
     margin-right: 14px;
+    padding: 20px;
   }
 }
 @media (min-width: 1280px) {
@@ -106,7 +109,7 @@ header {
 .menu-toggle {
     margin: 0;
     padding: 0;
-    background-color: var(--third-dark-color);
+    background-color: var(--primary-dark-color);
     cursor: pointer;
     border: none;
     outline: none;
@@ -137,6 +140,11 @@ header {
  height: 35px;
  padding: 9px;
  margin: 15px;
+ opacity: 0.4;
+}
+
+.btn-mob:hover {
+  opacity: 1.0;
 }
 
 
@@ -161,7 +169,7 @@ header {
   border-radius: 12px;
   border: none;
   background: var(--light-color);
-  color: var(--third-dark-color);
+  color:  var(--third-dark-color);
   font-family: inherit;
   font-size: 18px;
   font-weight: 700;
@@ -169,7 +177,15 @@ header {
   text-transform: uppercase;
   white-space: nowrap;
   }
-  .btn-mob {
+
+  .header-button:hover,
+  .header-button:focus {
+    background: var(--secondary-dark-color);
+    color:  var(--accent-color);
+}
+  
+
+.btn-mob {
   display: none;
 }
 }
@@ -178,5 +194,10 @@ header {
  .header-button {
   padding: 16px 84px;
   
+}
+.header-button:hover,
+.header-button:focus {
+  background: var(--secondary-dark-color);
+  color:  var(--accent-color);
 }
 }
