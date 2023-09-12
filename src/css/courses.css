@@ -25,6 +25,7 @@
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.20);
   background: linear-gradient(180deg, #060707 0%, #1D1D1D 100%);
+  height: 398px;
 }
 
 .courses-top-of-card {
@@ -65,6 +66,8 @@
   opacity: 0.4;
 }
 
+/* 768px */
+
 @media (min-width: 768px) {
   .courses-about-div {
     margin-bottom: 50px;
@@ -87,6 +90,7 @@
     /* width: 342px; */
     width: calc((100% - 20px) / 2);
     padding: 32px;
+    height: 452px;
   }
 
   .courses-list {
@@ -126,7 +130,10 @@
   }
 }
 
-@media (min-width: 1440px) {
+
+/* 1440px */
+
+/* @media (min-width: 1440px) {
   .courses-p {
     width: 565px;
   }
@@ -143,4 +150,111 @@
       stroke: var(--light-color);
     }
   }
+} */
+
+
+/* css-transitions for cards */
+.courses-list-card {
+  transition: transform 1s;
+}
+
+
+.courses-card-content {
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.courses-list-card:hover .courses-card-content {
+  transform: rotateY(180deg);
+  transition: transform 1s;
+}
+
+
+.courses-list-card:hover {
+  transform: rotateY(180deg);
+  transition: transform 1s;
+}
+
+.front,
+.back,
+.back-2,
+.back-3 {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+
+.back {
+  background-image:linear-gradient(180deg, #070808 5%, #10111100 50%, #1b1b1b00 90%, #00ffff00 3%),
+    linear-gradient(0deg, #1c1c1c 5%, #10111100 50%, #00000000 90%, #00ffff00 3%),
+    linear-gradient(90deg, #121212 5%, #00000000 50%, #1b1b1b00 90%, #00000000 3%),
+    linear-gradient(270deg, #101111 5%, #1011113d 50%, #1b1b1b00 90%, #457d8a00 3%),
+    url(/img/courses-card-back-one.jpg);
+  background-size: contain;
+  transform: rotateY(180deg);
+  width: 100%;
+}
+
+.back-2 {
+  background-image: linear-gradient(180deg, #070808 5%, #10111100 50%, #1b1b1b00 90%, #00ffff00 3%),
+    linear-gradient(0deg, #1c1c1c 5%, #10111100 50%, #00000000 90%, #00ffff00 3%),
+    linear-gradient(90deg, #121212 5%, #00000000 50%, #1b1b1b00 90%, #00000000 3%),
+    linear-gradient(270deg, #101111 5%, #1011113d 50%, #1b1b1b00 90%, #457d8a00 3%),
+    url(/img/courses-card-back-two.jpg);
+  background-size: cover;
+  transform: rotateY(180deg);
+  width: 100%;
+}
+
+.back-3 {
+  background-image: linear-gradient(180deg, #070808 5%, #10111100 50%, #1b1b1b00 90%, #00ffff00 3%),
+    linear-gradient(0deg, #1c1c1c 5%, #10111100 50%, #00000000 90%, #00ffff00 3%),
+    linear-gradient(90deg, #121212 5%, #00000000 50%, #1b1b1b00 90%, #00000000 3%),
+    linear-gradient(270deg, #101111 5%, #1011113d 50%, #1b1b1b00 90%, #457d8a00 3%),
+    url(/img/courses-card-back-three.jpg);
+  background-size: cover;
+  transform: rotateY(180deg);
+  width: 100%;
+  background-position: center;
+}
+
+.back-content {
+  transform: rotateY(180deg);
+}
+
+.courses-card-p-back{
+  opacity: 0.4;
+  text-transform: uppercase;
+}
+
+.courses-card-h3-back{
+  text-transform: lowercase;
+}
+
+.courses-card-cost-back{
+  font-size: 48px;
+}
+
+.courses-card-price-back{
+  display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+      margin-top: 90px;
+      margin-bottom: 100px;
+}
+
+.courses-card-back-mentor{
+  font-size: 12px;
+}
+
+.courses-card-mentor{
+  display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 }
