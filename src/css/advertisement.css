@@ -45,7 +45,7 @@
   white-space: nowrap;
   animation-name: advertisementTicker;
   animation-duration: 5s;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
 
