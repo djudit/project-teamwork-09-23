@@ -1,5 +1,5 @@
-<section class="hero container">
-  <div class="hero-container">
+<section class="hero">
+  <div class="hero-container container">
     <div class="hero-container-for-position">
       <h1 class="hero-name">
         Discover the magic of
@@ -13,7 +13,7 @@
       </p>
       <div class="hero-elements">
         <div class="hero-students">
-          <ul>
+          <ul class="hero-students-foto-container">
             <li class="hero-students-foto">
               <img
                 srcset="
@@ -81,6 +81,14 @@
           type="image/png"
         />
         <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./img/hero-photographer-desk.webp    1x,
+            ./img/hero-photographer-desk@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
           media="(min-width: 768px)"
           srcset="
             ./img/hero-photographer-tab.png    1x,
@@ -89,12 +97,28 @@
           type="image/png"
         />
         <source
+          media="(min-width: 768px)"
+          srcset="
+            ./img/hero-photographer-tab.webp    1x,
+            ./img/hero-photographer-tab@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
           media="(max-width: 767px)"
           srcset="
             ./img/hero-photographer-mob.png    1x,
             ./img/hero-photographer-mob@2x.png 2x
           "
           type="image/png"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./img/hero-photographer-mob.webp    1x,
+            ./img/hero-photographer-mob@2x.webp 2x
+          "
+          type="image/webp"
         />
         <img
           class="hero-photographer"
