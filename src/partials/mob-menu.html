@@ -5,13 +5,38 @@
         <use class="mob-menu-icon-close" href="./img/icons.svg#icon-x"></use>
       </svg>
     </button>
-    <ul class="mob-menu-style">
-      <li><a class="mob-menu-item" href="#about">About us</a></li>
-      <li><a class="mob-menu-item" href="#courses">Our courses</a></li>
-      <li><a class="mob-menu-item" href="#mentors">Our mentors</a></li>
-      <li><a class="mob-menu-item" href="#reviews">Reviews</a></li>
-      <li><a class="mob-menu-item" href="#contacts">Contacts</a></li>
-    </ul>
+    <div class="mob-menu-jc">
+      <ul class="mob-menu-style">
+        <li><a class="mob-menu-item" href="#about">About us</a></li>
+        <li><a class="mob-menu-item" href="#courses">Our courses</a></li>
+        <li><a class="mob-menu-item" href="#mentors">Our mentors</a></li>
+        <li><a class="mob-menu-item" href="#reviews">Reviews</a></li>
+        <li><a class="mob-menu-item" href="#contacts">Contacts</a></li>
+      </ul>
+      <picture class="mob-menu-width">
+        <source
+          media="(min-width: 768px)"
+          srcset="./img/mob-menu-tab.jpg 1x, ./img/mob-menu-tab@2x.jpg 2x"
+          type="image/jpeg"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="./img/mob-menu-tab.webp 1x, ./mob-menu-tab@2x.webp 2x"
+          type="image/webp"
+        />
+        <source
+          media="(max-width: 767.99px)"
+          srcset="./img/mob-menu-mob.jpg 1x, ./img/mob-menu-mob@2x.jpg 2x"
+          type="image/jpeg"
+        />
+        <source
+          media="(max-width: 767.99px)"
+          srcset="./img/mob-menu-mob.webp 1x, ./img/mob-menu-mob@2x.webp 2x"
+          type="image/webp"
+        />
+        <img src="./img/mob-menu-mob.jpg" alt="camera" />
+      </picture>
+    </div>
   </div>
 </div>
 <script
