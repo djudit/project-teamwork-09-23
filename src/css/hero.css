@@ -1,6 +1,7 @@
 .hero {
   background-image: url(../img/net.png);
-  padding-bottom: 150px;
+  /* padding-bottom: 150px;   Якщо писати так то нижній відступ з сіткою, я його бачу, але в загальному проєкті він не спрацьовує */
+  margin-bottom: 150px; /* нижній відступ без сітки */
   background-repeat: repeat;
   background-size: 100% 100%;
 }
@@ -8,12 +9,10 @@
   max-width: 335px;
   background-color: var(--secondary-dark-color);
   border-radius: 30px;
-  padding: 0 20px;
 }
 @media screen and (min-width: 768px) {
   .hero-container {
     max-width: 704px;
-    padding: 0 32px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -44,16 +43,13 @@
   .hero-name {
     font-size: 60px;
     line-height: 1.07;
-    max-width: 517px;
     padding-top: 64px;
-    padding-bottom: 20px;
   }
 }
 @media screen and (min-width: 1280px) {
   .hero-name {
     font-size: 64px;
     line-height: 1.06;
-    max-width: 563px;
     padding-top: 60px;
   }
 }
@@ -62,48 +58,49 @@
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
   .hero-name-text {
     width: 418px;
-    padding-right: 0px;
   }
 }
 @media screen and (min-width: 1280px) {
   .hero-name-text {
-    width: 418px;
-    padding-bottom: 136px;
+    margin-bottom: 136px;
   }
 }
 .hero-elements {
   display: flex;
-  gap: 40px;
+  gap: 17px; /*розрахунок з урахуванням контейнеру з фото який залишився після відносного позиціонування*/
   margin-bottom: 31px;
 }
 @media screen and (min-width: 768px) {
   .hero-elements {
-    gap: 135px;
+    gap: 25px;
     margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero-elements {
+    margin-bottom: 0;
   }
 }
 .hero-students {
   display: flex;
   flex-direction: column;
-  position: relative;
-  width: 107px;
-  height: 84px;
+  gap: 4px;
 }
 @media screen and (min-width: 768px) {
   .hero-students {
-    width: 135px;
-    padding: 0;
+    flex-direction: row;
+    gap: 0;
   }
 }
-
-.hero-students-foto {
-  position: absolute;
+.hero-students-foto-container {
   display: flex;
+}
+.hero-students-foto {
   width: 44px;
   height: 44px;
 }
@@ -118,22 +115,24 @@
   z-index: 3;
 }
 .hero-students-foto:nth-child(2) {
+  position: relative;
   z-index: 2;
-  left: 33px;
+  left: -11px;
 }
 @media screen and (min-width: 768px) {
   .hero-students-foto:nth-child(2) {
-    left: 40px;
+    left: -14px;
   }
 }
 
 .hero-students-foto:nth-child(3) {
+  position: relative;
   z-index: 1;
-  left: 66px;
+  left: -23px;
 }
 @media screen and (min-width: 768px) {
   .hero-students-foto:nth-child(3) {
-    left: 80px;
+    left: -25px;
   }
 }
 .hero-students-text {
@@ -159,11 +158,9 @@
 @media screen and (min-width: 768px) {
   .hero-container-text {
     flex-direction: column;
-    margin-top: 0;
-    margin-left: 147px;
-    width: 82px;
     gap: 8px;
     align-items: flex-start;
+    margin-left: -15px;
   }
 }
 .hero-arrow {
