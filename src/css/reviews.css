@@ -129,8 +129,7 @@
 @media screen and (min-width: 1280px) {
  
 .list-reviews-cart {
-  max-width: 610px;
-  min-height: 198px;
+  width: calc(100% - 20px);
 }
 .reviews-item {
   max-width: 100%;
