@@ -133,6 +133,11 @@ header {
  height: 35px;
  padding: 9px;
  margin: 15px;
+ opacity: 0.4;
+}
+
+.btn-mob:hover {
+  opacity: 1.0;
 }
 
 
@@ -153,7 +158,7 @@ header {
   border-radius: 12px;
   border: none;
   background: var(--light-color);
-  color: #121212;
+  color:  var(--third-dark-color);
   font-family: DM Sans;
   font-size: 18px;
   font-style: normal;
@@ -163,7 +168,15 @@ header {
   cursor: pointer;
   white-space: nowrap;
   }
-  .btn-mob {
+
+  .header-button:hover,
+  .header-button:focus {
+    background: var(--secondary-dark-color);
+    color:  var(--accent-color);
+}
+  
+
+.btn-mob {
   display: none;
 }
 }
@@ -172,5 +185,10 @@ header {
  .header-button {
   padding: 16px 84px;
   
+}
+.header-button:hover,
+.header-button:focus {
+  background: var(--secondary-dark-color);
+  color:  var(--accent-color);
 }
 }
