@@ -1,6 +1,6 @@
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 .footer-link {
   transition: color 250ms var(--transition-cub);
 }
