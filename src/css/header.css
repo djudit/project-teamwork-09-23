@@ -44,6 +44,10 @@ header {
   fill: var(--light-color);
 }
 
+.logo-svg:hover,
+.logo-svg:focus {
+  fill: var(--accent-color);
+}
 
 .nav {
   display: flex;
@@ -138,6 +142,10 @@ header {
 
 .icon-svg {
   fill: var(--accent-color);
+  opacity: 0.4;
+}
+.icon-svg:hover {
+  opacity: 1.0;
 }
 
 
@@ -153,14 +161,12 @@ header {
   border-radius: 12px;
   border: none;
   background: var(--light-color);
-  color: #121212;
-  font-family: DM Sans;
+  color: var(--third-dark-color);
+  font-family: inherit;
   font-size: 18px;
-  font-style: normal;
   font-weight: 700;
   line-height: 1.5; 
   text-transform: uppercase;
-  cursor: pointer;
   white-space: nowrap;
   }
   .btn-mob {
