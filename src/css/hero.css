@@ -99,11 +99,18 @@
 }
 .hero-students-foto-container {
   display: flex;
+  position: relative;
 }
 .hero-students-foto {
   width: 44px;
   height: 44px;
+  margin-right: -13.5px;
 }
+
+.hero-students-foto:last-child {
+  margin-right: 0;
+}
+
 @media screen and (min-width: 768px) {
   .hero-students-foto {
     width: 54px;
@@ -115,24 +122,25 @@
   z-index: 3;
 }
 .hero-students-foto:nth-child(2) {
-  position: relative;
+  /* position: relative; */
   z-index: 2;
-  left: -11px;
+  /* left: -11px; */
 }
+
 @media screen and (min-width: 768px) {
   .hero-students-foto:nth-child(2) {
-    left: -14px;
+    /* left: -14px; */
   }
 }
 
 .hero-students-foto:nth-child(3) {
-  position: relative;
+  /* position: relative; */
   z-index: 1;
-  left: -23px;
+  /* left: -23px; */
 }
 @media screen and (min-width: 768px) {
   .hero-students-foto:nth-child(3) {
-    left: -25px;
+    /* left: -25px; */
   }
 }
 .hero-students-text {
