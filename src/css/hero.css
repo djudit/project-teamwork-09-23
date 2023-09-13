@@ -1,10 +1,12 @@
 .hero {
-  background-image: url(../img/net.png);
+  /* background-image: url(../img/net.png); */
   /* padding-bottom: 150px;   Якщо писати так то нижній відступ з сіткою, я його бачу, але в загальному проєкті він не спрацьовує */
-  margin-bottom: 150px; /* нижній відступ без сітки */
-  background-repeat: repeat;
-  background-size: 100% 100%;
+  /* margin-bottom: 150px; нижній відступ без сітки */
+  /* background-repeat: repeat;
+  background-size: 100% 100%; */
+  padding-bottom: 150px;
 }
+
 .hero-container {
   max-width: 335px;
   background-color: var(--secondary-dark-color);
@@ -100,6 +102,7 @@
 .hero-students-foto-container {
   display: flex;
   position: relative;
+  margin-right: 15px;
 }
 .hero-students-foto {
   width: 44px;
@@ -121,28 +124,33 @@
 .hero-students-foto:nth-child(1) {
   z-index: 3;
 }
+
 .hero-students-foto:nth-child(2) {
   /* position: relative; */
   z-index: 2;
   /* left: -11px; */
 }
 
+/* 
 @media screen and (min-width: 768px) {
   .hero-students-foto:nth-child(2) {
-    /* left: -14px; */
+    left: -14px;
   }
-}
+} */
 
 .hero-students-foto:nth-child(3) {
   /* position: relative; */
   z-index: 1;
   /* left: -23px; */
 }
+
+/* 
 @media screen and (min-width: 768px) {
   .hero-students-foto:nth-child(3) {
-    /* left: -25px; */
+    left: -25px;
   }
-}
+} */
+
 .hero-students-text {
   color: var(--light-color);
   font-size: 14px;
@@ -168,7 +176,7 @@
     flex-direction: column;
     gap: 8px;
     align-items: flex-start;
-    margin-left: -15px;
+    /* margin-left: -15px; */
   }
 }
 .hero-arrow {

@@ -26,6 +26,11 @@ body {
   }
 }
 
+.decor-net {
+  background-image: url(../img/net.png);
+  background-size: cover;
+}
+
 /* Titles */
 
 h2 {
