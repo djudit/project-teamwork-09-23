@@ -13,8 +13,9 @@
   align-items: center;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 12px;
-  /* padding-top: 20px;
-  padding-bottom: 20px; */
+  /* padding-top: 20px; */
+  /* padding-bottom: 20px; */
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -22,6 +23,7 @@
   .header-box {
     border: none;
     margin-bottom: 40px;
+    margin-top: 0;
   }
 }
 
@@ -64,6 +66,7 @@
   /* margin-right: 20px; */
   justify-content: center;
   height: 50px;
+  /* margin-top: 20px; */
 }
 .nav-list {
   display: none;
@@ -75,6 +78,7 @@
     height: 60px;
     margin-right: 14px;
     padding: 20px;
+    margin-top: 20px;
   }
 }
 @media (min-width: 1280px) {
