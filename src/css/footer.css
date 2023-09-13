@@ -18,7 +18,7 @@ footer {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-@media screen (min-device-pixel-ratio: 2),
+@media screen and (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   footer {
