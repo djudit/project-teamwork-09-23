@@ -31,6 +31,39 @@ body {
   background-size: cover;
 }
 
+@media (min-width: 768px) and (max-width: 1277px) {
+  .decor-net {
+    background-image: url(../img/net-tab.png);
+  }
+}
+@media (max-width: 767px) {
+  .decor-net {
+    background-image: url(../img/net-mob.png);
+  }
+}
+@media (min-resolution: 192dpi) and (max-width: 767px) {
+  .decor-net {
+    background-image: url(../img/net-mob@2x.png);
+  }
+}
+@media (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1279px) {
+  .decor-net {
+    background-image: url(../img/net-tab@2x.png);
+  }
+}
+
+@media (min-width: 1280px) {
+  .decor-net {
+    background-image: url(../img/net-desk.png);
+  }
+}
+
+@media (min-resolution: 192dpi) and (min-width: 1280px) {
+  .decor-net {
+    background-image: url(../img/net-desk@2x.png);
+  }
+}
+
 /* Titles */
 
 h2 {
