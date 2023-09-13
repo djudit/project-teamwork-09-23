@@ -18,9 +18,7 @@ footer {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-@media screen and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   footer {
     background-image: url(../img/footer-mobile-line-2x.png);
     background-size: contain;
