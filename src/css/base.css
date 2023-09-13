@@ -26,6 +26,43 @@ body {
   }
 }
 
+.decor-net {
+  background-image: url(../img/net-mob.png);
+  background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .decor-net {
+    background-image: url(../img/net-mob@2x.png);
+  }
+}
+
+@media (min-width: 768px) {
+  .decor-net {
+    background-image: url(../img/net-tab.png);
+  }
+}
+
+@media (min-width: 768px) and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+  .decor-net {
+    background-image: url(../img/net-tab@2x.png);
+  }
+}
+
+@media (min-width: 1280px) {
+  .decor-net {
+    background-image: url(../img/net-desk.png);
+  }
+}
+
+@media (min-width: 1280px) and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+  .decor-net {
+    background-image: url(../img/net-desk@2x.png);
+  }
+}
+
 /* Titles */
 
 h2 {
