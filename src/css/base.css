@@ -27,26 +27,24 @@ body {
 }
 
 .decor-net {
-  background-image: url(../img/net.png);
+  background-image: url(../img/net-mob.png);
   background-size: cover;
 }
 
-@media (min-width: 768px) and (max-width: 1277px) {
-  .decor-net {
-    background-image: url(../img/net-tab.png);
-  }
-}
-@media (max-width: 767px) {
-  .decor-net {
-    background-image: url(../img/net-mob.png);
-  }
-}
-@media (min-resolution: 192dpi) and (max-width: 767px) {
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .decor-net {
     background-image: url(../img/net-mob@2x.png);
   }
 }
-@media (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1279px) {
+
+@media (min-width: 768px) {
+  .decor-net {
+    background-image: url(../img/net-tab.png);
+  }
+}
+
+@media (min-width: 768px) and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
   .decor-net {
     background-image: url(../img/net-tab@2x.png);
   }
@@ -58,7 +56,8 @@ body {
   }
 }
 
-@media (min-resolution: 192dpi) and (min-width: 1280px) {
+@media (min-width: 1280px) and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
   .decor-net {
     background-image: url(../img/net-desk@2x.png);
   }
