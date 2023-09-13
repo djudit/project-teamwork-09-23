@@ -10,6 +10,15 @@
     padding-right: 20px;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1277px) {
+  .menu-container {
+    padding-top: 232px;
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+}
+
 @media (max-width: 1277px) {
   .menu-container {
     position: fixed;
@@ -17,9 +26,6 @@
     left: 0;
     width: 60vw;
     height: 100vh;
-    padding-top: 232px;
-    padding-left: 64px;
-    padding-right: 64px;
     background-color: var(--accent-color);
     z-index: 999;
     transform: translateX(40vw);
